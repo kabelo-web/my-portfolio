@@ -33,6 +33,7 @@ header a:hover{
 #about{
     padding-top: 16px;
     margin-top: 16px;
+    color: #222;
 }
 
 nav{
@@ -128,5 +129,18 @@ footer a{
     list-style-type: square;
     padding-left: 1.2rem;
     font-size: 1.1rem;
-    color:#444;
+    color: White;
 }
+
+
+#about,
+#contact,
+#skills {
+  color: white; /* Darker text for readability */
+  background-color: #111827; /* Light subtle background */
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
