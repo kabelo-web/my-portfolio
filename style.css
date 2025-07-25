@@ -1,0 +1,132 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 0;
+}
+
+header{
+    background-color: #111827;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    padding-right: 120px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header a:hover{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#about{
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: yellow;
+    font-weight: bold;
+    border-bottom: 2px solid yellow;
+}
+
+main{
+   padding: 90px 2rem 2rem; /* Adjusted for fixed header */
+}
+
+section{
+    margin-bottom: 3rem;
+}
+
+footer{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+footer a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3{
+    margin-top: 0;
+    color: #111827;
+}
+
+.project-card a{
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-card a:hover{
+    text-decoration: underline;
+}
+
+#skills ul{
+    list-style-type: square;
+    padding-left: 1.2rem;
+    font-size: 1.1rem;
+    color:#444;
+}
